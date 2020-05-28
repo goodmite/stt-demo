@@ -57,8 +57,8 @@ function prettyfyHyp(text, doCapFirst, doPrependSpace) {
 
 
 var dictate = new Dictate({
-		server : 'ws://asr.imibot.ai/client/ws/speech',
-		serverStatus : 'ws://asr.imibot.ai/client/ws/status',
+		server : 'ws://asr.imibot.ai:8080/client/ws/speech',
+		serverStatus : 'ws://asr.imibot.ai:8080/client/ws/status',
 		recorderWorkerPath : 'lib/recorderWorker.js',
 		//model_name : model_name,
 		//lang_local : lang_local,
