@@ -57,8 +57,8 @@ function prettyfyHyp(text, doCapFirst, doPrependSpace) {
 
 
 var dictate = new Dictate({
-		server : 'ws://asr.imibot.ai:8080/client/ws/speech',
-		serverStatus : 'ws://asr.imibot.ai:8080/client/ws/status',
+		server : 'wss://dev-frontend-1093425665.us-east-1.elb.amazonaws.com/client/ws/speech',
+		serverStatus : 'wss://dev-frontend-1093425665.us-east-1.elb.amazonaws.com/client/ws/status',
 		recorderWorkerPath : 'lib/recorderWorker.js',
 		//model_name : model_name,
 		//lang_local : lang_local,
@@ -166,6 +166,7 @@ function __updateTranscript(text) {
 
 
 function toggleListening() {
+	debugger;
 	if (isConnected) {
 		dictate.stopListening();
 	} else {
